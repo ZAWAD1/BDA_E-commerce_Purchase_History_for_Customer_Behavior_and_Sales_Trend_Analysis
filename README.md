@@ -23,20 +23,21 @@ This project applies a complete big data analytics workflow to a large, messy, r
 
 ## Results
 
-| Metric | Value |
-|---|---|
-| Raw rows | 2,633,521 |
-| Duplicate rows removed | 675 |
-| Invalid (epoch) timestamp rows removed | 19,631 |
-| Rows missing user_id/price removed | 2,051,027 |
-| Price outliers removed (IQR) | 43,596 |
-| **Final clean rows** | **518,553** |
-| Unique customers | 91,768 |
-| Unique products | 19,397 |
-| PCA variance retained (2 components) | 94.5% |
-| Top brand | Samsung (86,479 purchases) |
+| Metric                                 | Value                      |
+| -------------------------------------- | -------------------------- |
+| Raw rows                               | 2,633,521                  |
+| Duplicate rows removed                 | 675                        |
+| Invalid (epoch) timestamp rows removed | 19,631                     |
+| Rows missing user_id/price removed     | 2,051,027                  |
+| Price outliers removed (IQR)           | 43,596                     |
+| **Final clean rows**                   | **518,553**                |
+| Unique customers                       | 91,768                     |
+| Unique products                        | 19,397                     |
+| PCA variance retained (2 components)   | 94.5%                      |
+| Top brand                              | Samsung (86,479 purchases) |
 
 **Key findings:**
+
 - Sales show a clear, non-uniform monthly trend with a strong peak in August
 - Purchases are concentrated in a small number of categories and brands — Samsung alone accounts for a disproportionate share of volume
 - Most transactions cluster at the lower end of the price range, with a clear long right tail
@@ -73,11 +74,13 @@ This project applies a complete big data analytics workflow to a large, messy, r
 ## Getting Started
 
 ### Prerequisites
+
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ### Setup
+
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store) and save it as `data/kz.csv`
 2. Open `notebook/ecommerce_analysis.ipynb`
 3. Run all cells top to bottom
@@ -97,4 +100,10 @@ Zawad-Kaizen
 
 ## License
 
-This project is for educational purposes. Dataset © original Kaggle contributor; see dataset page for license terms.
+Copyright <2026> <COPYRIGHT Zawad-Kaizen>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
