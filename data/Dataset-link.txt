@@ -1,0 +1,3 @@
+Link:https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store
+
+Download the dataset and place it in data to use.
